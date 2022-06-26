@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nesting Grid with Album Layouts!</title>
+</head>
+
+<body>
+
+  <div class="albums">
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=1">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, excepturi!</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=2">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">short.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=3">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=4">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=5">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=6">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=7">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=8">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=9">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="https://source.unsplash.com/random/300x300?v=10">
+      <div class="album__details">
+        <h2>Album Title</h2>
+        <p class="album__artist">Artist Name</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque
+          repellat, iste debitis.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <style>
+
+    html {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      font-size: 10px;
+      text-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+    }
+
+    *,*:before,*:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      height: 100vh;
+      min-height: calc(100vh - 100px);
+      background-image: linear-gradient(to top, #011634, #002a49, #00405b, #00566a, #036c76);
+      margin: 50px;
+      background-attachment: fixed;
+      letter-spacing: -1px;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0 0 5px 0;
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+
+    }
+
+    .album {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      color: white;
+      font-weight: 100;
+      border-radius: 10px;
+    }
+
+    .album__artwork {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  </style>
+</body>
+
+</html>
